@@ -1,5 +1,6 @@
 /*
  * Primary file for the API
+ * Based on code by Pirple
  *
  */
 
@@ -109,12 +110,6 @@ const unifiedServer = (req,res) => {
 };
 
 
-// Define a request router
-const router = {
-  'ping' : handlers.ping,
-  'hello' : handlers.hello,
-};
-
 // Define the handlers
 const handlers = {};
 
@@ -142,4 +137,10 @@ handlers.notFound = (data) => {
   return new Promise ((resolve,reject) => {
     resolve({'statusCode' : 404});
   });
+};
+
+// Define a request router
+const router = {
+  'ping' : handlers.ping,
+  'hello' : handlers.hello,
 };

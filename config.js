@@ -1,6 +1,7 @@
 /*
  * Create and export configuration constiables
- *
+ * Based on code by Pirple
+ * 
  */
 
 // Container for all the environments
